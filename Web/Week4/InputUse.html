@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>input tag 만들기</legend>
+      <form action="" method="post">
+        <p>
+          <label
+            >1. Hidden type:
+            <input
+              type="hidden"
+              id="hidden_id1"
+              name="hiddenName1"
+              value="SendToServerVal"
+          /></label>
+        </p>
+        <p>
+          <label
+            >2. Text type : <input type="text" id="text_id" maxlength="10"
+          /></label>
+        </p>
+        <p>
+          <label
+            >3. Password type :
+            <input type="password" id="password_id" maxlength="10"
+          /></label>
+        </p>
+        <p>
+          4. Search type :
+          <label><input type="search" id="search_id" /></label>
+        </p>
+        <p>
+          5. URL type :
+          <label><input type="url" id="url_id" /></label>
+        </p>
+        <p>
+          6. Email type :
+          <label><input type="email" id="email_id" /></label>
+        </p>
+        <p>
+          7. Tel type :
+          <label
+            ><input
+              type="tel"
+              id="tel_id"
+              oatterb="[0-9]{2,3}[0-9]{3,4}[0-9]{4}"
+              placeholder="예: 010-1234-5678"
+          /></label>
+        </p>
+        <p>
+          8. Number type :
+          <label
+            ><input type="number" id="number_id" min="1" max="5" value="1"
+          /></label>
+        </p>
+        <p>
+          9. Range type :
+          <label
+            ><input type="range" id="range_id" min="0" max="5" value="3"
+          /></label>
+        </p>
+
+        <fieldset>
+          <legend>10. Radio type</legend>
+          <label
+            ><input type="radio" name="subject" value="eng" />English</label
+          >
+          <label><input type="radio" name="subject" value="ch" />Chinese</label>
+          <label
+            ><input type="radio" name="subject" value="jp" />Japanese</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>11. Checkbox type</legend>
+          <label
+            ><input type="checkbox" name="subject" value="eng" />English</label
+          >
+          <label
+            ><input type="checkbox" name="subject" value="ch" />Chinese</label
+          >
+          <label
+            ><input type="checkbox" name="subject" value="jp" />Japanese</label
+          >
+        </fieldset>
+
+        <p>
+          <label
+            >12. Color type : <input type="color" id="color_id" value="#00ff00"
+          /></label>
+        </p>
+
+        <fieldset>
+          <legend>13. Date, Month, Week type</legend>
+          <label>지정일 : <input type="date" id="date_id" /></label><br />
+          <label>월 선택 : <input type="month" id="month_id" /></label><br />
+          <label>주 선택 : <input type="week" id="week_id" /></label><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>14. Time, Datetime-local type</legend>
+          <label
+            >시작 시간
+            <input
+              type="time"
+              id="selected_time"
+              value="10:00"
+              step="1" /></label
+          ><br />
+          <label>
+            날짜 및 시간 선택(사용안함) 1.
+            <input
+              type="datetime"
+              id="selected_datetime"
+              value="2025-03-07T10:00"
+              step="3600"
+            />
+            <br />
+          </label>
+          <label
+            >날짜 및 시간 선택 2.
+            <input
+              type="datetime-local"
+              id="selected-time"
+              value="2025-03-07T10:00:00"
+              step="3600"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>15. reset, submit type</legend>
+          <label
+            >초기화 : <input type="reset" id="reset_all" value="초기화"
+          /></label>
+          <br />
+          <label
+            >전송 : <input type="submit" id="submit_all" value="전송"
+          /></label>
+        </fieldset>
+
+        <p>
+          <label for=""
+            >15. button type :
+            <input
+              type="button"
+              value="New Window"
+              id="button_Id"
+              onclick="window.open()"
+          /></label>
+        </p>
+        <p>
+          16. file type : <input type="file" id="file_id" value="파일 첨부" />
+        </p>
+      </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>form tag 만들기</legend>
+      <form action="server.php" method="post" autocomplete="on">
+        <input type="text" title="검색" />
+        <input type="submit" value="검색" />
+        <br /><br />
+        <label>1. 아이디 (6자 이상)</label>
+        <input type="text" />
+        <br /><br />
+        <label>2. 아이디 (6자 이상) <input type="text" /></label>
+        <br /><br />
+        <label for="USERID">3. 아이디 (6자 이상)</label>
+        <input type="text" id="USERID" />
+      </form>
+      <br />
+      <hr />
+      <form>
+        <h3>수강분야 (다수 선택 가능)</h3>
+        label tag 미사용
+        <ul>
+          <li><input type="checkbox" value="grm" />문법</li>
+          <li><input type="checkbox" value="wr" />작문</li>
+          <li><input type="checkbox" value="rd" />독해</li>
+        </ul>
+
+        label tag 사용
+        <ul>
+          <li>
+            <label><input type="checkbox" value="grm" />문법</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="wr" />작문</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="rd" />독해</label>
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <h3>수강분야 (1과목 선택 가능)</h3>
+        <ul>
+          <li>
+            <label><input type="radio" name="subject" value="eng" />영어</label>
+          </li>
+          <li>
+            <label
+              ><input type="radio" name="subject" value="ch" />중국어</label
+            >
+          </li>
+          <li>
+            <label
+              ><input type="radio" name="subject" value="jp" />일본어</label
+            >
+          </li>
+        </ul>
+      </form>
+    </fieldset>
+  </body>
+</html>
