@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+      }
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #ddd;
+      }
+
+      caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <o>ul List</o>
+    <ul>
+      <li>item : 1</li>
+      <li>item : 2</li>
+      <li>item : 3</li>
+      <li>item : 4</li>
+    </ul>
+
+    <hr>
+    <p>ol List</p>
+    <ol>
+      <li>item : 1</li>
+      <li>item : 2</li>
+      <li>item : 3</li>
+      <li>item : 4</li>
+    </ol>
+
+    <hr>
+    <p>ol List : add type</p>
+    <ol type="a">
+      <li>item : 1</li>
+      <li>item : 2</li>
+      <li>item : 3</li>
+      <li>item : 4</li>
+    </ol>
+
+    <hr>
+    <p>ol List : add type, start</p>
+    <ol type="a" start="4">
+      <li>item : 1</li>
+      <li>item : 2</li>
+      <li>item : 3</li>
+      <li>item : 4</li>
+
+      <table>
+        <caption>직원 정보 테이블</caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>이름</th>
+            <th>부서</th>
+            <th>이메일</th>
+            <th>입사일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>홍길동</td>
+            <td>개발팀</td>
+            <td>hong@example.com</td>
+            <td>2020-03-15</td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>김철수</td>
+            <td>마케팅</td>
+            <td>kim@example.com</td>
+            <td>2019-11-20</td>
+        </tr>
+          <tr>
+            <td>1003</td>
+            <td>이영희</td>
+            <td>인사팀</td>
+            <td>lee@example.com</td>
+            <td>2021-01-10</td>
+          </tr>
+          <tr>
+            <td>1004</td>
+            <td>박지민</td>
+            <td>디자인</td>
+            <td>park@example.com</td>
+            <td>2018-07-22</td>
+        </tr>
+        <tr>
+            <td>1005</td>
+            <td>최수진</td>
+            <td>영업팀</td>
+            <td>choi@example.com</td>
+            <td>2022-04-05</td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">총 직원 수: 5명</td>
+          </tr>
+        </tfoot>
+      </table>
+  </body>
+</html>
