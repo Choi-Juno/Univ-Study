@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>input tag 만들기</legend>
+      <p>
+        1. autofocus <br />
+        <label class="part1" for="name1">이름 : </label>
+        <input type="text" id="name1" autofocus required /><br />
+        <label class="part1" for="tel1">전화번호 : </label>
+        <input type="tel" id="tel1" />
+      </p>
+      <p>
+        2. placeholder <br />
+        <input type="text" class="part2" placeholder="이름" /><br />
+        <input type="tel" class="part2" placeholder="전화번호" />
+      </p>
+      <p>
+        3. readonly <br />
+        <label class="part3" for="name3">전공 : </label>
+        <input type="text" id="name3" value="인공지능소프트웨어" readonly />
+      </p>
+      <p>
+        4. required <br />
+        <label class="part4" for="required_item1">필수 전송 항목 : </label>
+        <input type="text" id="required_item1" required /> <br />
+        <input type="submit" value="전송" />
+      </p>
+      <p>
+        5. min, max, step <br />
+        <label class="part5" for="minmax_item1">최대, 최소 값</label>
+        <input
+          type="number"
+          id="minmax_item1"
+          min="1"
+          max="20"
+          step="2"
+          value="1"
+        />
+      </p>
+      <p>
+        6. size, minlength, maxlength <br />
+        <label class="part6" form="minmax_item2">문자열 길이 조정 : </label>
+        <input
+          type="text"
+          id="minmax_item2"
+          size="10"
+          minlength="10"
+          maxlength="20"
+          placeholder="10~20자 사이 등록"
+        />
+        <br />
+      </p>
+    </fieldset>
+  </body>
+</html>
