@@ -33,8 +33,8 @@ int main()
   }
   else
   {
-    printf("연산자를 잘못 입력하셨습니다.\n");
-    return 0;
+    printf("사칙연산자를 잘못 입력하였습니다. 결과를 -1로 출력하겠습니다.\n");
+    result = -1;
   }
 
   printf("연산 결과: \n");
