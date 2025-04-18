@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      tr {
+        height: 30px;
+      }
+      td {
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>웹에서 색상 표현하기</legend>
+      <table border="1">
+        <tr>
+          <td>16진수 표기</td>
+          <td>rgb, rgba</td>
+          <td>hsl, hsla</td>
+        </tr>
+        <tr>
+          <td style="background-color: #fac629"></td>
+          <td style="background-color: rgb(17, 100, 83)"></td>
+          <td style="background-color: hsl(175, 75%, 45%)"></td>
+        </tr>
+      </table>
+      <h1 style="color: #222222">1. HTML COLOR 확인</h1>
+      <h1 style="color: rgb(147, 123, 36)">2. HTML COLOR 확인</h1>
+      <h1 style="color: rgb(147, 123, 36, 0.7)">3. HTML COLOR 확인</h1>
+      <h1 style="color: hsl(33, 488%, 30%)">4. HTML COLOR 확인</h1>
+      <h1 style="color: rgb(122, 122, 102)">5. HTML COLOR 확인</h1>
+      <input type="color" style="color: rgb(147, 123, 36)" /> 색상 확인
+    </fieldset>
+  </body>
+</html>
