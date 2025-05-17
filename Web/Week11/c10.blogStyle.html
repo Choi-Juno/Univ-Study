@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+      }
+      header {
+        background-color: #333;
+        padding: 10px;
+        color: white;
+      }
+      header h1 {
+        margin: 0;
+        padding: 10px;
+      }
+      header ul {
+        list-style-type: none;
+        display: flex;
+      }
+      header ul li {
+        margin-right: 2rem;
+      }
+      header ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .blog-list {
+        flex-direction: column;
+        gap: 2rem;
+        float: left;
+        width: 70%;
+      }
+      .post {
+        padding: 2rem;
+      }
+      main {
+        display: flex;
+        gap: 2rem;
+        overflow: hidden;
+      }
+
+      .sidebar {
+        flex: 1;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+      }
+
+      .post a {
+        text-decoration: none;
+        color: lightblue;
+      }
+
+      .tags a {
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        background-color: #e0e0e0;
+        border-radius: 5px 10px;
+        display: inline-block;
+        margin: 10px;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Blog Style</h1>
+        <ul>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">카테고리</a></li>
+          <li><a href="#">소개</a></li>
+          <li><a href="#">문의</a></li>
+        </ul>
+      </header>
+      <main>
+        <section class="blog-list">
+          <article class="post">
+            <h2>첫번째 글 제목</h2>
+            <p class="post-meta">카테골: 웹 개발</p>
+            <p class="post-summary">
+              이 글에서는 HTML5 시멘틱 태그를 이용하는 이유와 실제 블로그 템플릿
+              구조에 대해 설명합니다.
+            </p>
+            <a href="#" class="read-more">더보기</a>
+          </article>
+          <article class="post">
+            <h2>두번째 글 제목</h2>
+            <p class="post-meta">카테골: HTML</p>
+            <p class="post-summary">
+              HTML 문서를 설계할 때 고려해야 할 핵심 요소들에 대해 다룹니다.
+            </p>
+            <a href="#" class="read-more">더보기</a>
+          </article>
+        </section>
+
+        <aside class="sidebar">
+          <h3>인기 글</h3>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">첫번째 글 제목</a>
+              </li>
+              <li>
+                <a href="#">두번째 글 제목</a>
+              </li>
+              <li>
+                <a href="#">세번째 글 제목</a>
+              </li>
+            </ul>
+          </nav>
+          <h3>태그</h3>
+          <div class="tags">
+            <a href="#">#HTML</a>
+            <a href="#">#Sementic</a>
+            <a href="#">#Blog</a>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <div class="container">
+      <footer>
+        <p>&copy; 2025 블로그 스타일. 모든 권리 보유.</p>
+      </footer>
+    </div>
+  </body>
+</html>
