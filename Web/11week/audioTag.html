@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Audio 실행</p>
+    <audio src="./Media/4Season.mp3" controls></audio>
+    <hr />
+    <p>audio 실행</p>
+    <audio controls>
+      <source src="./Media/4Season.ogg" type="audio/ogg" />
+      <source src="./Media/4Season.mp3" type="audio/mpeg" />
+      <source src="./Media/4Season.wav" type="audio/wav" />
+      브라우저가 지원하지 않습니다.
+    </audio>
+    <hr />
+    <p>video 실행1</p>
+    <video
+      src="./Media/Butter.mp4"
+      controls
+      loop
+      width="320"
+      height="260"
+    ></video>
+    <hr />
+    <p>video 실행 2</p>
+    <video controls width="320" height="260">
+      <source src="./Media/Butter.mp4" type="video/mp4" />
+      <source src="./Media/Butter.webm" type="video/webm" />
+      브라우저가 지원하지 않습니다.
+    </video>
+    <hr />
+    <p>poster 속성</p>
+    <video controls width="320" height="260" poster="./Media/Butter.jpg">
+      <source src="./Media/Butter.mp4" type="video/mp4" />
+      <source src="./Media/Butter.webm" type="video/webm" />
+      <track
+        src="./Media/Butter.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="BUTTER"
+        default
+      />
+      브라우저가 지원하지 않습니다.
+    </video>
+    <hr />
+    <p>video 실행 3</p>
+  </body>
+</html>
