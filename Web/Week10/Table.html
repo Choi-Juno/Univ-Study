@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border: 1px solid black;
+      width: 300px;
+    }
+    .tbClass_1 {
+      caption-side: top;
+    }
+    .tbClass_2 {
+      caption-side: bottom;
+    }
+    .tbClass_3 {
+      caption-side: top;
+      border: 2px solid red;
+    }
+    .tbClass_4 {
+      caption-side: top;
+    }
+    .tbClass_4 td {
+      border: 1px solid black;
+    }
+    .tbClass_5 {
+      border-collapse: collapse;
+    }
+    .tbClass_5 td {
+      border: 1px dotted black;
+    }
+    .tbClass_7 {
+      border-collapse: collapse;
+    }
+    .tbClass_7 td {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+    }
+    .tbClass_8 {
+      border-collapse: collapse;
+    }
+    .tbClass_8 td {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+    }
+    #td_1 {
+      text-align: left;
+    }
+    #td_2 {
+      text-align: center;
+    }
+    #td_3 {
+      text-align: right;
+    }
+  </style>
+  <body>
+    <table class="tbClass_1">
+      <caption>
+        1. caption-side: top;
+      </caption>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tbClass_2">
+      <caption>
+        2. caption-side: bottom;;
+      </caption>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tbClass_1">
+      <caption>
+        3. caption-side: top;
+      </caption>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tbClass_3">
+      <caption>
+        4. border 1px solid red;
+      </caption>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tbClass_4">
+      <caption>
+        5. caption-side: top;
+      </caption>
+      <tr>
+        <td>Col 1</td>
+        <td>Col 2</td>
+        <td>Col 3</td>
+      </tr>
+    </table>
+    td: border 지정
+    <hr />
+    <table class="tbClass_5">
+      <caption>
+        6. border-collapse: collapse;
+      </caption>
+      <tr>
+        <td>Col 1-1</td>
+        <td>Col 1-2</td>
+        <td>Col 1-3</td>
+      </tr>
+      <tr>
+        <td>Col 2-1</td>
+        <td>Col 2-2</td>
+        <td>Col 2-3</td>
+      </tr>
+    </table>
+    td: border dotted 지정
+    <hr />
+    <table class="tbClass_7">
+      <caption>
+        7. border-collapse: collapse;
+      </caption>
+      <tr>
+        <td>Col 1-1</td>
+        <td>Col 1-2</td>
+        <td>Col 1-3</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="tbClass_7">
+      <caption>
+        8. text-align: center, left, right
+      </caption>
+      <tr>
+        <td id="td_1">Col 1-1</td>
+        <td id="td_2">Col 1-2</td>
+        <td id="td_3">Col 1-3</td>
+      </tr>
+    </table>
+  </body>
+</html>

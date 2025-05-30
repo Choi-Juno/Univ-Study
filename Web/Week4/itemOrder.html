@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 80px;
+        text-align: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="itemOrder.html" method="post">
+      <h1>상품 주문서</h1>
+      <fieldset>
+        <legend>개인 정보</legend>
+        <br />
+        <label for="name">이름 : </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="여백없이 입력"
+        /><br />
+        <label for="phone">연락처 : </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="연락 가능한 번호"
+        /><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <br />
+        <label for="address">주소 : </label>
+        <input type="text" name="address" id="address" />
+        <br />
+
+        <label for="tel">전화번호 : </label>
+        <input type="tel" name="tel" id="tel" /><br />
+
+        <table>
+          <tr>
+            <td><label for="textarea">메모 :</label></td>
+            <td>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="20"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>주문 정보</legend>
+        <br />
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="guatemala">과테말라 안티구아 (100g)</label>
+        <input type="number" name="number" id="number" />개 <br />
+
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="indonesia">인도네시아 만델링 (100g)</label>
+        <input type="number" name="number" id="number" />개 <br />
+
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="blend">탐다로는도다(블렌딩) (100g)</label>
+        <input type="number" name="number" id="number" />개 <br />
+      </fieldset>
+    </form>
+  </body>
+</html>

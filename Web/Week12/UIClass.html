@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:enabled {
+        border: 2px solid greenyellow;
+        margin: 5px;
+      }
+      input:disabled {
+        border: 2px solid red;
+        margin: 5px;
+        background-color: lightgray;
+      }
+      button {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      button:enabled {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      button:disabled {
+        background-color: lightgray;
+        color: #666;
+        cursor: not-allowed;
+      }
+      input[type="checkbox"]:checked + label {
+        color: red;
+        font-weight: bold;
+      }
+      input[type="radio"]:checked + label {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>웹 요소의 상탱 따라 스타일이 변경</legend>
+      <label for="">활성화된 입력창: input:enabled</label><br />
+      <input type="text" placeholder="입력 가능" /><br />
+      <label for="">비활성화된 입력창: input:disabled</label><br />
+      <input type="text" placeholder="입력 불가" disabled /><br />
+      <button>활성화된 버튼 : button:enabled</button> <br />
+      <button type="submit" disabled>비활성화된 버튼: button:disabled</button>
+    </fieldset>
+    <fieldset>
+      <h2>1. 체크박스 예제</h2>
+      <form action="">
+        <input type="checkbox" name="" id="chk1" />
+        <label for="chk1">Check item 1</label><br />
+        <input type="checkbox" name="" id="chk1" />
+        <label for="chk1">Check item 2</label>
+      </form>
+
+      <h2>라디오 버튼 예제</h2>
+      <form action="">
+        <input type="radio" name="radio" id="radio1" />
+        <label for="radio1">Radio item 1</label>
+        <input type="radio" name="radio" id="radio2" />
+        <label for="radio2">Radio item 2</label>
+      </form>
+    </fieldset>
+  </body>
+</html>

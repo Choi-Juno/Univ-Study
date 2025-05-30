@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .divOut {
+        position: relative;
+        width: 460px;
+        height: 460px;
+        border: 5px solid black;
+      }
+      .divBox1 {
+        color: white;
+        background-color: blue;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 5px solid black;
+        z-index: 3;
+      }
+      .divBox2 {
+        color: white;
+        background-color: violet;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border: 5px solid purple;
+        z-index: 2;
+        left: 100px;
+        top: 100px;
+      }
+      .divBox3 {
+        color: white;
+        background-color: coral;
+        width: 250px;
+        height: 250px;
+        border: 5px solid red;
+        z-index: 1;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divOut">
+      <div class="divBox1">first</div>
+      <div class="divBox2">second</div>
+      <div class="divBox3">third</div>
+    </div>
+  </body>
+</html>

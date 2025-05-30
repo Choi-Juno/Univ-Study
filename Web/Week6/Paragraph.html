@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Direction_type-ltr {
+        direction: ltr;
+      }
+      .Direction_type-rtl {
+        direction: rtl;
+      }
+
+      .Align_Style-1 {
+        text-align: start;
+      }
+      .Align_Style-2 {
+        text-align: center;
+      }
+      .Align_Style-3 {
+        text-align: left;
+      }
+      .Align_Style-4 {
+        text-align: right;
+      }
+      .Align_Style-4-1 {
+        direction: ltr;
+        text-align: end;
+      }
+      .Align_Style-4-2 {
+        direction: rtl;
+        text-align: end;
+      }
+      .Align_Style-5 {
+        text-align: center;
+      }
+      .Align_Style-6 {
+        text-align: justify;
+      }
+      .Align_Style-7 {
+        text-align: match-parent;
+      }
+
+      .Indent_Style-1 {
+        text-indent: 15px;
+      }
+      .Indent_Style-2 {
+        text-indent: 20%;
+      }
+
+      .Line-height_Style-1 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .Line-height_Style-2 {
+        font-size: 20px;
+        line-height: 50%;
+      }
+      
+      .text-overflow-box {
+        width: 500px;
+        display: block;
+        padding: 10px;
+      }
+      .Text-overflow_Style-1 {
+        white-space: nowrap;
+        text-overflow: clip;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .Text-overflow_Style-2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .Text-overflow-Style-2:hover {
+        overflow: visible;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>3.1 direction 속성</legend>
+      <p class="Direction_type-ltr">English Capital Letter - ltr</p>
+      <p class="Direction_type-rtl">English Capital Letter - rtl</p>
+    </fieldset>
+    <fieldset>
+      <legend>3.2 text-align 속성</legend>
+      <p>텍스트 정렬 설정</p>
+      <p class="Align_Style-1">Text align Setting 텍스트 정렬 세팅 - start</p>
+      <p class="Align_Style-2">Text align Setting 텍스트 정렬 세팅 - center</p>
+      <p class="Align_Style-3">Text align Setting 텍스트 정렬 세팅 - left</p>
+      <p class="Align_Style-4">Text align Setting 텍스트 정렬 세팅 - right</p>
+      <p class="Align_Style-4-1">
+        Text align Setting 텍스트 정렬 세팅 - ltr end
+      </p>
+      <p class="Align_Style-4-2">
+        Text align Setting 텍스트 정렬 세팅 - rtl end
+      </p>
+      <p class="Align_Style-5">Text align Setting 텍스트 정렬 세팅 - center</p>
+      <p class="Align_Style-6">Text align Setting 텍스트 정렬 세팅 - justify</p>
+      <p class="Align_Style-7">
+        Text align Setting 텍스트 정렬 세팅 - match-parent
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>3.3 text-indent</legend>
+      <p>텍스트 들여쓰기 설정</p>
+      <p class="Indent_Style-1">Text indent Setting 텍스트 들여쓰기 세팅 - 15px</p>
+      <p class="Indent_Style-2">
+        Text indent Setting 텍스트 들여쓰기 세팅 - 20%
+      </p>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>3.4 line-height 속성</legend>
+      <p>문단 줄 간격 설정</p>
+      <p class="Line-height_Style-1">
+        Line height Setting 문단 줄 간격 세팅
+        Fontsize 15px
+        height 20px
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, est!
+      </p>
+      <p class="Line-height_Style-2">
+        Line height Setting 문단 줄 간격 세팅
+        Fontsize 20px
+        height 50%
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, accusamus.
+      </p>
+      
+    </fieldset>
+    <fieldset class="text-overflow-box">
+      <legend>3.5 text-overflow 속성</legend>
+      <p>텍스트 오버플로우 설정</p>
+      <p class="Text-overflow_Style-1">
+        text-overflow clip 줄바꿈 설정. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aperiam sequi iste velit placeat. Iure officia, sunt maiores quam, vel obcaecati voluptate consequuntur minus harum beatae perspiciatis, ratione nostrum voluptas.
+      </p>
+      <p class="Text-overflow_Style-2">text-overflow ellipsis 줄바꿈 설정 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil aut officiis ea voluptatum cumque dolore eligendi dolor, rem consequuntur? Pariatur, neque eos. Reprehenderit earum ipsa omnis iste atque consequatur?</p>
+    </fieldset>
+  </body>
+</html>
