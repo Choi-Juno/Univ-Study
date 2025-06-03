@@ -3,7 +3,9 @@
 int main()
 {
     int total = 0;
-    int pizza, hamburger, cola = 0;
+    int pizza = 0;
+    int hamburger = 0;
+    int cola = 0;
     while (1)
     {
         printf("[메뉴]\n");
