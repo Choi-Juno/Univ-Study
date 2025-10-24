@@ -10,5 +10,6 @@ public class MultipleTable {
         for (int i = 1; i <= 0; i++) {
             System.out.println(dan + " * " + i + " = " + dan * i);
         }
+        System.out.printf("[ %d단]");
     }
 }

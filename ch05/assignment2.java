@@ -4,6 +4,14 @@ public class assignment2 {
         int[] math = { 72, 92, 78 };
         int[] english = { 80, 85, 91 };
 
+        int[][] score = {
+                { 90, 80, 72 }, { 72, 92, 78 }, { 80, 85, 91 }
+        };
+
+        for (int i = 0; i < score.length; i++) {
+            System.out.println(score[i][0]);
+        }
+
         for (int i = 0; i < korean.length; i++) {
             double avg = (double) (korean[i] + math[i] + english[i]) / 3;
             int sum = korean[i] + math[i] + english[i];
